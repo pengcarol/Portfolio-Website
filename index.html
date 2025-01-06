@@ -14,6 +14,10 @@
   </head>
   <body>
     <div id="header">
+      <img src="images/white.png" class="white1">
+      <img src="images/white.png" class="white2">
+      <img src="images/white.png" class="white3">
+      <img src="images/white.png" class="white4">
       <div class="container">
         <nav>
           <ul class="name">
@@ -35,39 +39,40 @@
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="about-col-1">
-            <img src="images/profile.png" class="profile">
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+          <h1 class="sub-title">About Me</h1>
+          <img src="images/underline.png" class="underline">
+          <div class="lower-region">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+            <div class="column2">
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                  <li><span>Web Development</span><br>Web App Development</li>
+                  <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2021-Current</span><br>Ui/ux training</li>
+                  <li><span>2021-Current</span><br>Ui/ux training</li>
+                  <li><span>2021-Current</span><br>Ui/ux training</li>
+                  <li><span>2021-Current</span><br>Ui/ux training</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2020</span><br>BCS York</li>
+                  <li><span>2020</span><br>BCS York</li>
+                </ul>
+              </div>
             </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br>Web App Development</li>
-                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2021-Current</span><br>Ui/ux training</li>
-                <li><span>2021-Current</span><br>Ui/ux training</li>
-                <li><span>2021-Current</span><br>Ui/ux training</li>
-                <li><span>2021-Current</span><br>Ui/ux training</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2020</span><br>BCS York</li>
-                <li><span>2020</span><br>BCS York</li>
-              </ul>
           </div>
         </div>
       </div>
@@ -76,6 +81,7 @@
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
+        <img src="images/underline-pink.png" class="underline-pink">
         <div class="work-list">
           <div class="work">
             <img src="images/logo.png">
@@ -108,18 +114,17 @@
 <!----------------Contact------------------>
     <div id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row con">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fab fa-facebook"></i> contact@gmail.com</p>
-            <p><i class="fab fa-facebook"></i> 1234567890</p>
+            <img src="images/underline.png" class="underline">
+            <p><i class="fab fa-facebook"></i> c24peng@uwaterloo.ca</p>
+            <p><i class="fab fa-facebook"></i> 416-904-2515</p>
             <div class="social-icons">
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href="www.linkedin.com/in/carol-peng-31a524329"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/pengcarol"><i class="fab fa-facebook"></i></a>
             </div>
-            <a href="Resume (1).pdf" download class="btn btn2">Download CV</a>
+            <a href="Resume (1).pdf" download class="btn btn2">Download Resume</a>
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
@@ -135,7 +140,7 @@
     </div>
 
     <div class="copyright">
-      <p>Copyright © Carol</p>
+      <p>Copyright © 2025</p>
     </div>
   
   <script>

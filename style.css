@@ -9,8 +9,8 @@ html{
 }
 
 body{
-  background: white;
-  color: black;
+  background: rgba(231, 204, 204, 0.23);
+  color: #23255d;
 }
 
 #header{
@@ -19,6 +19,44 @@ body{
   background-image: url(images/background.png);
   background-size: cover;
   background-position: center;
+}
+
+.white1{
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 28px;
+  width: 100%;
+}
+
+.white2{
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.white3{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 23px;
+}
+
+.white4{
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 23px;
 }
 
 .container{
@@ -98,31 +136,39 @@ nav ul li a:hover::after{
 
 #about{
   padding: 80px 0;
-  color: black;
+  color: #23255d;
 }
 
 .row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  margin: 100px 350px 100px 350px;
 }
 
-.about-col-1{
-  flex-basis: 35%;
+.row p{
+  flex: 2;
 }
 
-.about-col-1 img {
-  width: 100%;
-}
-
-.about-col-2{
-  flex-basis: 60%
+.column2{
+  flex: 1;
+  padding-left: 100px;
+  margin-top: -30px;
+  align-items: left;
 }
 
 .sub-title{
   font-size: 60px;
   font-weight: 600;
-  color: black;
+  margin-bottom: 20px;
+}
+
+.lower-region{
+  display: flex;
+}
+
+.underline{
+  width: 70px;
+  height: 10px;
+  margin-bottom: 20px;
 }
 
 .tab-titles{
@@ -142,7 +188,7 @@ nav ul li a:hover::after{
   content: '';
   width: 0;
   height: 3px;
-  background: black;
+  background: #eec124ff;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -159,7 +205,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-  color: green;
+  color: #eec124ff;
   font-size: 14px;
 }
 
@@ -175,6 +221,13 @@ nav ul li a:hover::after{
 
 #portfolio{
   padding: 50px 0;
+  margin: 100px 350px;
+}
+
+.underline-pink{
+  width: 70px;
+  height: 10px;
+  margin-bottom: 20px;
 }
 
 .work-list{
@@ -200,7 +253,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  background-color: rgba(231, 204, 204, 0.6);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -227,7 +280,7 @@ nav ul li a:hover::after{
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: black;
+  background: #23255d;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -246,19 +299,25 @@ nav ul li a:hover::after{
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid black;
+  border: 1px solid #23255d;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: black;
+  color: #23255d;
   transition: background 0.5s;
 }
 
 .btn:hover{
-  background: green;
+  background: #23255d;
+  color: white;
 }
 
 /*---------------------Contact----------------------*/
+
+.row.con{
+  display: flex;
+}
+
 .contact-left{
   flex-basis: 35%;
 }
@@ -266,7 +325,7 @@ nav ul li a:hover::after{
   margin: 30px;
 }
 .contact-left p i{
-  color: black;
+  color: #23255d;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -277,22 +336,22 @@ nav ul li a:hover::after{
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: black;
+  color: #23255d;
   display: inline-block;
   transition: transform 0.5s;
 }
 .social-icons a:hover{
-  color: green;
+  color: #eec124ff;
   transform: translateY(-5px);
 }
 
 .btn.btn2{
-  display: inline-block;
-  background: lightgreen;
+  display: inline-block;;
 }
 
 .contact-right{
   flex-basis: 60%;
+  padding-top: 300px;
 }
 
 .contact-right form{
@@ -301,12 +360,11 @@ nav ul li a:hover::after{
 
 form input, form textarea{
   width: 100%;
-  border: 0;
-  outline: none;
-  background: yellow;
+  border: 2px;
+  border-color: #23255d;
   padding: 15px;
   margin: 15px 0;
-  color: black;
+  color: #23255d;
   font-size: 18px;
   border-radius: 6px;
 }
@@ -322,15 +380,16 @@ form btn2{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: black;
-  font-weight: 300;
+  background: white;
+  font-weight: medium;
   margin-top: 30px;
   margin-bottom: 0;
-  color: white;
+  color: #23255d;
+  z-index: 10000000000;
 }
 
 #msg{
-  color: darkgreen;
+  color: #23255d;
   margin-top: -40px;
   display: block;
 }
