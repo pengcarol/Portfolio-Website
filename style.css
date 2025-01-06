@@ -29,6 +29,7 @@ body{
   top: 0;
   height: 28px;
   width: 100%;
+  z-index: 10000000;
 }
 
 .white2{
