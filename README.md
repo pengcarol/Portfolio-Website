@@ -8,5 +8,5 @@ Projects Section: Highlighted projects with descriptions, links, and images
 Contact Page: Form for visitors to get in touch
 
 Technologies Used:
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS
 Hosting: GitHub Pages
